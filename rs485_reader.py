@@ -3,9 +3,9 @@ from config import RS485_PORT, BAUD_RATE
 
 
 class RS485Reader:
-    def __init__(self):
+    def __init__(self, port=RS485_PORT, baudrate=BAUD_RATE):
         # Verwende die konfigurierten Werte
-        self.ser = serial.Serial(RS485_PORT, BAUD_RATE, timeout=1)
+        self.ser = serial.Serial(port, baudrate, timeout=1)
 
     def read_data(self):
         if self.ser.in_waiting > 0:
