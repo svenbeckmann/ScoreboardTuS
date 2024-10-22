@@ -13,7 +13,7 @@ FOULS_GUEST_FILE = "fouls_guest.txt"
 
 # Regex Patterns
 TIME_PATTERN = r'(\d{4})\?\?RS'
-GOALS_HOME_PATTERN = r'HG(\d{2})'  # Beispielpattern für Heimtore
-GOALS_GUEST_PATTERN = r'GG(\d{2})'  # Beispielpattern für Gasttore
-FOULS_HOME_PATTERN = r'HTF(\d{2})'  # Beispielpattern für Heim-Teamfouls
-FOULS_GUEST_PATTERN = r'GTF(\d{2})'  # Beispielpattern für Gast-Teamfouls
+GOALS_HOME_PATTERN = r'\?\?RD&! (\d+)$'  # Beispielpattern für Heimtore
+GOALS_GUEST_PATTERN = r'\?\?RD\&\) (\d+)$'  # Beispielpattern für Gasttore
+FOULS_HOME_PATTERN = r'\?\?RD# (\d+)$'  # Beispielpattern für Heim-Teamfouls
+FOULS_GUEST_PATTERN = r'\?\?RD#\$ (\d+)$'  # Beispielpattern für Gast-Teamfouls
