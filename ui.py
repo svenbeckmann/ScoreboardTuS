@@ -4,11 +4,12 @@ from file_writer import FileWriter
 
 
 class ScoreboardApp:
-    def __init__(self, root):
+    def __init__(self, root, rs485_reader):
         self.root = root
         self.root.title("Scoreboard TuS")
         self.extractor = DataExtractor()
         self.writer = FileWriter()
+        self.rs485_reader = rs485_reader
 
         # Labels für Anzeige
         self.time_label = tk.Label(
@@ -30,6 +31,20 @@ class ScoreboardApp:
         self.fouls_guest_label = tk.Label(
             root, text="Gast Teamfouls: 0", font=("Helvetica", 18))
         self.fouls_guest_label.pack()
+
+        # Regelmäßige Aktualisierung
+        self.update_data()
+
+    def update_data(self):
+        try:
+            data = self.rs485_reader.read_data()
+            if data:
+                self.update_labels(data)
+        except Exception as e:
+            print(f"Error reading data: {e}")
+
+        # Nächste Aktualisierung nach 1 Sekunde
+        self.root.after(1000, self.update_data)
 
     def update_labels(self, data):
         time = self.extractor.extract_time(data)

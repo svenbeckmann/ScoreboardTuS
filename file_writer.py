@@ -10,22 +10,24 @@ class FileWriter:
         self.fouls_home_file = FOULS_HOME_FILE
         self.fouls_guest_file = FOULS_GUEST_FILE
 
+    def write_to_file(self, file_path, data):
+        try:
+            with open(file_path, 'w') as f:
+                f.write(data)
+        except Exception as e:
+            print(f"Error writing to {file_path}: {e}")
+
     def write_time(self, time):
-        with open(self.time_file, 'w') as f:
-            f.write(time)
+        self.write_to_file(self.time_file, time)
 
     def write_goals_home(self, goals):
-        with open(self.goals_home_file, 'w') as f:
-            f.write(goals)
+        self.write_to_file(self.goals_home_file, goals)
 
     def write_goals_guest(self, goals):
-        with open(self.goals_guest_file, 'w') as f:
-            f.write(goals)
+        self.write_to_file(self.goals_guest_file, goals)
 
     def write_fouls_home(self, fouls):
-        with open(self.fouls_home_file, 'w') as f:
-            f.write(fouls)
+        self.write_to_file(self.fouls_home_file, fouls)
 
     def write_fouls_guest(self, fouls):
-        with open(self.fouls_guest_file, 'w') as f:
-            f.write(fouls)
+        self.write_to_file(self.fouls_guest_file, fouls)
