@@ -14,40 +14,30 @@ D!  414??RS ??R??RD!  433 ??RS ??RD!  432 ??RS ??RD!  431 ??RS 
 b'\x02??RD! 1429\x03\x1a\x02??RS\x03 \x02??RD! 1428\x03 \x02??RS\x03 \x02??RD! 1427\x03\x14\x02??RS\x03 \x02??RD! 1426\x03\x15\x02??RS\x03 \x02??RD! 1425\x03\x16\x02??RS\x03 \x02??RD!
 
 # Tore Heim
-b'\x02??RD&! 4 \x03&'
-(.venv) sb@MacBookAir ScoreboardTuS % python3 test.py
+b'\x02??RD&! 4 \x03&' 
 b'\x02??RD&! 6 \x03$'
-(.venv) sb@MacBookAir ScoreboardTuS % python3 test.py
 b'\x02??RD&! 8 \x03*'
 
 
 #Tore Gast
 
 b'\x02??RD&) 5 \x03/'
-(.venv) sb@MacBookAir ScoreboardTuS % python3 test.py
 b'\x02??RD&) 7 \x03-'
-(.venv) sb@MacBookAir ScoreboardTuS % python3 test.py
 b'\x02??RD&) 9 \x03#'
 
 #TF Heim
 
 ^[[Ab'\x02??RD# 1 \x03\x07'
-(.venv) sb@MacBookAir ScoreboardTuS % python3 test.py
 b'\x02??RD# 2 \x03 '
-(.venv) sb@MacBookAir ScoreboardTuS % python3 test.py
 b'\x02??RD%%X\x03M'
-(.venv) sb@MacBookAir ScoreboardTuS % python3 test.py
 b'\x02??RD# 6 \x03 '
-(.venv) sb@MacBookAir ScoreboardTuS % python3 test.py
 b'\x02??RD# 8 \x03\x0e'
 
 # TF Gast
-b'\x02??RD#$ 3\x03 \x02??RD#$ 4\x03\x06'
-(.venv) sb@MacBookAir ScoreboardTuS % python3 test.py
-b'\x02??RD#$ 7\x03\x05'
-(.venv) sb@MacBookAir ScoreboardTuS % python3 test.py
+b'\x02??RD#$ 3\x03 \x02??RD#$ 4\x03\x06' b'\x02??RD#$ 7\x03\x05'
+
 b'\x02??RD#$ 9\x03\x0b'
-(.venv) sb@MacBookAir ScoreboardTuS % 
+
 
 
 

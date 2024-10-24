@@ -15,7 +15,7 @@ class RS485Reader:
     def read_data(self):
         if self.ser and self.ser.in_waiting > 0:
             try:
-                data = self.ser.readline().decode('utf-8').strip()
+                data = self.ser.readline().strip()
                 return data
             except Exception as e:
                 print(f"Error reading data: {e}")
