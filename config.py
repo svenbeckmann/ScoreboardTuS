@@ -20,8 +20,8 @@ FOULS_HOME_FILE = "fouls_home.txt"
 FOULS_GUEST_FILE = "fouls_guest.txt"
 
 # Regex Patterns
-TIME_PATTERN = rb'(\d{1,2})(\d{2})\?\?RS'  # Pattern für Spielzeit
-GOALS_HOME_PATTERN = rb'\?\?RD&! (\d+)\s?\x03'  # Pattern für Heimtore
-GOALS_GUEST_PATTERN = rb'\?\?RD&) (\d+)\s?\x03'  # Pattern für Gasttore
-FOULS_HOME_PATTERN = rb'\?\?RD&# (\d+)\s?\x03'  # Pattern für Heimfouls
-FOULS_GUEST_PATTERN = rb'\?\?RD#$ (\d+)\s?\x03'  # Pattern für Gastfouls
+TIME_PATTERN = rb'(\d{1,2})(\d{2})\?\?RS'  # Pattern for Matchtime
+GOALS_HOME_PATTERN = rb'\?\?RD&! (\d+)\s?\x03'  # Pattern for Home Goals
+GOALS_GUEST_PATTERN = rb'\?\?RD\&) (\d+)\s?\x03'  # Pattern for Guest Goals
+FOULS_HOME_PATTERN = rb'\?\?RD&# (\d+)\s?\x03'  # Pattern for Home Fouls
+FOULS_GUEST_PATTERN = rb'\?\?RD#$ (\d+)\s?\x03'  # Pattern for Guest Fouls
