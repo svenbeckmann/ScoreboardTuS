@@ -11,9 +11,14 @@ def main():
     app = ScoreboardApp(root, reader)
 
     def update_data():
-        data = reader.read_data()
-        if data:
-            app.update_labels(data)
+        try:
+            data = reader.read_data()
+            if data:
+                # Aktualisiert die Labels mit den neuen Daten
+                app.update_labels(data)
+        except Exception as e:
+            print(f"Error updating data: {e}")
+
         root.after(1000, update_data)  # Wiederhole alle 1 Sekunde
 
     update_data()

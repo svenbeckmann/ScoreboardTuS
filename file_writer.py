@@ -1,4 +1,10 @@
-from config import TIME_FILE, GOALS_HOME_FILE, GOALS_GUEST_FILE, FOULS_HOME_FILE, FOULS_GUEST_FILE
+from config import (
+    TIME_FILE,
+    GOALS_HOME_FILE,
+    GOALS_GUEST_FILE,
+    FOULS_HOME_FILE,
+    FOULS_GUEST_FILE,
+)
 
 
 class FileWriter:

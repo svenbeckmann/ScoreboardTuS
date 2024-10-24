@@ -16,7 +16,7 @@ class RS485Reader:
         if self.ser and self.ser.in_waiting > 0:
             try:
                 data = self.ser.readline().strip()
-                return data
+                return data  # Gibt die Rohdaten zurück
             except Exception as e:
                 print(f"Error reading data: {e}")
                 return None
