@@ -8,7 +8,7 @@ def main():
     root = tk.Tk()
     app = ScoreboardApp(root)
 
-    reader = RS485Reader(port='COM3')  # RS485-Port
+    reader = RS485Reader()  # RS485-Port
 
     def update_data():
         data = reader.read_data()

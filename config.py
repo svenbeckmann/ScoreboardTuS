@@ -1,7 +1,7 @@
 # config.py
 
 # RS485-Konfiguration
-RS485_PORT = 'COM3'  # Beispiel-Port, passe diesen an deine Umgebung an
+RS485_PORT = '/dev/tty.usbmodem55860048461'  # Beispiel-Port, passe diesen an deine Umgebung an
 BAUD_RATE = 19200  # Baudrate für RS485
 
 # Datei-Pfade für die Ausgabedateien
